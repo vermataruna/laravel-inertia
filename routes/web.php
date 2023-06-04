@@ -8,6 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/users', function () {
+    sleep(3);
     return Inertia::render('Users');
 });
 
