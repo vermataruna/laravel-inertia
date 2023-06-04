@@ -1,6 +1,5 @@
 import { createApp, h } from 'vue';
-import { createInertiaApp } from '@inertiajs/vue3';
-import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
+import { Link, createInertiaApp } from '@inertiajs/vue3';
  
 createInertiaApp({
     resolve: name => {
@@ -10,6 +9,7 @@ createInertiaApp({
     setup({ el, App, props, plugin }) {
         return createApp({ render: () => h(App, props) })
         .use(plugin)
+        .component("Link", Link)
         .mount(el)
     },
     progress: {
