@@ -1,5 +1,5 @@
 import { createApp, h } from 'vue';
-import { Link, createInertiaApp } from '@inertiajs/vue3';
+import { Link, createInertiaApp, Head } from '@inertiajs/vue3';
  
 createInertiaApp({
     resolve: name => {
@@ -10,6 +10,7 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
         .use(plugin)
         .component("Link", Link)
+        .component("Head", Head)
         .mount(el)
     },
     progress: {
@@ -18,4 +19,5 @@ createInertiaApp({
         includeCSS: true,
         showSpinner: true,
     },
+    title: title => `My App | ${title}`
 });

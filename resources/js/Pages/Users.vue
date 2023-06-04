@@ -1,4 +1,5 @@
 <template>
+  <Head title="Users"/>
   <h1 class="text-3xl">Users</h1>
     <div style="margin-top: 800px">
       <p>The current time is {{ time }}.</p>
@@ -16,6 +17,8 @@ export default {
   
   props: {
     time: String
-  }
+  },
+
+  components: {}
 }
 </script>

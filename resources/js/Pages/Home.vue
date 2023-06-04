@@ -1,4 +1,5 @@
 <template>
+    <Head title="Home"/>
     <h1 class="text-3xl">
         Home
     </h1>
@@ -8,7 +9,8 @@
 import Layout from '../Shared/Layout.vue';
 
 export default {
-    layout: Layout
+    layout: Layout,
+    components: {}
 }
 
 </script>
