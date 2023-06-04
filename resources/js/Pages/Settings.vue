@@ -1,5 +1,5 @@
 <template>
-    <h1>Welcome</h1>
+    <h1>Settings</h1>
     <Nav/>
 </template>
 

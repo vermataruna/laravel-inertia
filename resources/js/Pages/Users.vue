@@ -1,15 +1,15 @@
 <template>
-    <h1>Welcome</h1>
-    <Nav/>
+  <h1>Users</h1>
+  <Nav/>
 </template>
 
 <script>
 import Nav from '../Shared/Nav.vue';
 
 export default {
-    components: {
-        Nav
-    }
+  components: {
+      Nav
+  }
 }
 
 </script>
