@@ -8,13 +8,13 @@ This project is a simple web application built using the Laravel framework and I
 - Create & List users and search filter
 - Real-time form validation
 - Server-side rendering for initial page load and subsequent API requests using Inertia.js
-- Responsive design with tailwind css
+- Designed with tailwind css
 
 ## Installation
 To run this project locally, please follow these steps:
 
-1. Clone the repository: `git clone [repository_url]`
-2. Navigate to the project directory: `cd [project_directory]`
+1. Clone the repository: `git clone https://github.com/vermataruna/laravel-inertia.git`
+2. Navigate to the project directory: `cd laravel-inertia`
 3. Install the Laravel dependencies: `composer install`
 4. Install the frontend dependencies: `npm install`
 5. Create a copy of the `.env.example` file and rename it to `.env`
