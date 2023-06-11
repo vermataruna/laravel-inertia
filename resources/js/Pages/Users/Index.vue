@@ -33,6 +33,7 @@
 <script>
 import Layout from '../../Shared/Layout.vue';
 import Paginator from '../../Shared/Paginator.vue';
+import debounce from "lodash/debounce";
 
 export default {
   layout: Layout,
@@ -48,15 +49,13 @@ export default {
     }
   },
   watch: {
-    search(newValue, oldValue) {
-      this.$inertia.get('/users', { search: newValue }, {
-        preserveState: true,
-        replace: true
-      });
-      
-    }
-  },
-
+  search: debounce(function(newValue) {
+    this.$inertia.get('/users', { search: newValue }, {
+      preserveState: true,
+      replace: true
+    });
+  }, 500)
+},
   components: { Paginator }
 }
 </script>
